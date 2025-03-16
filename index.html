@@ -423,10 +423,15 @@
                 details.style.display = "none";
             }
         }
-            // Scroll ke atas setelah halaman di-load
+        // Scroll ke atas saat halaman dimuat
     window.onload = function() {
         window.scrollTo(0, 0);
-    }
+    };
+
+    // Menjaga posisi scroll kembali ke atas saat refresh
+    window.onbeforeunload = function() {
+        window.scrollTo(0, 0);
+    };
     </script>
 
 </body>
