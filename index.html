@@ -391,19 +391,19 @@
                 <li><a href="https://t.me/jasaoprekandroid_danz" target="_blank">Telegram</a></li>
             </ul>
 
-            <p>Atau Anda bisa mengirimkan pesan langsung menggunakan formulir di bawah ini:</p><form action="mailto:danu4830@gmail.com" method="get" enctype="text/plain">
-    <label for="name">Nama:</label>
-    <input type="text" id="name" name="name" required>
+            <p>Atau Anda bisa mengirimkan pesan langsung menggunakan formulir di bawah ini:</p>
+            <form action="mailto:danu4830@gmail.com?subject=Pesan dari Formulir Kontak&body=Nama: %20{name}%0D%0AEmail: %20{email}%0D%0APesan: %20{message}" method="get" enctype="text/plain">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required>
 
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
 
-    <label for="message">Pesan:</label>
-    <textarea id="message" name="message" rows="4" required></textarea>
+                <label for="message">Pesan:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
 
-    <button type="submit">Kirim Pesan</button>
-</form>
-
+                <button type="submit">Kirim Pesan</button>
+            </form>
             
         </div>
     </section>
